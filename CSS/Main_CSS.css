@@ -1,0 +1,273 @@
+body{
+	font-family: arial;
+}
+
+.zoom{
+	-webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/*Box container for the login*/
+.content{
+	width: 500px; /*500 pixel width*/
+	height: 520px; /*500 pixel height */
+	background-color: white; 
+	margin: auto; /*center the container*/
+	margin-top: 140px; /*140px away from top*/
+	border-radius: 25px;
+	box-shadow: 5px 5px 20px 20px #bbbbbb;
+	opacity: 0.9;
+}
+
+.imagelogo{
+	text-align: center; /*centers image*/
+
+}
+
+/*div class = "container" design*/
+.container{
+	text-align: center; /*centers all container contents*/
+}
+.container p{
+	margin-top: 20px; /*adjusts all table's top margin to 20px*/
+}
+.container a{
+	text-align:center; /*centers the text*/
+	text-decoration: none; /*removes any text decoration*/
+    font-size: 14px; /*sets font size to 14*/
+    color: grey;	/*text color grey*/
+}
+
+.container a:hover{
+	color: #d8d8d8; /*text color*/
+}	
+/*end of div class = "container"*/
+
+input[type=text], input[type=password] {
+    width: 300px; /*width of the input box*/
+    padding: 12px 30px; /*padding inside the input box*/
+    display: inline-block; /*allows to set a width and height on the element*/
+    border: 2px solid #ccc; /*sets border*/
+	-webkit-transition: 0.5s; /*transition time when clicked*/
+    box-sizing: border-box; /*full width*/
+}
+
+
+/*If user clicks the username box, this will be the design*/
+input[type=text]:focus{
+	border: 2px solid #555; /*sets border*/
+}
+
+/*If user clicks the password box, this will be the design*/
+input[type=password]:focus{
+	border: 2px solid #555; /*sets border*/
+}
+
+textarea{
+	resize: none;
+}
+
+button{
+	background-color: #4CAF50; 
+    color: yellow; /*text color*/
+    padding: 14px 20px; /*padding inside the button*/
+    margin-top: 8px;
+	margin-bottom: 12px;
+    border-radius: 10px; /*rounds the border*/
+	border: none; /*removes border*/
+    cursor: pointer; /*cursor design*/
+    width: 300px;
+}
+.btn:hover{
+	opacity:0.8; /*changes opacity when button is hovered*/
+}
+
+
+.topnav{
+	text-align: center;
+	word-spacing: 100px;
+	font-size: 15px;
+	margin-top: 100px;
+	margin-right: 10px;
+	
+	
+}
+
+.topnav a{
+	color: #585858;
+	text-decoration: none;
+	
+}
+
+.topnav a:hover{
+	color: #e8e8e8;
+	
+}
+
+.end p{
+	text-align: center;
+	font-size: 15px;
+	bottom: 0px;
+	color: #DFDFDF;
+	width:100%; 
+	text-align: center;
+}
+ 
+/*About Page: */
+
+.about-container{
+	border-radius: 25px;
+	position: relative;
+	background: white;
+	width: 1000px;
+	height: 500px;
+	margin: auto;
+	margin-top: 160px;
+	box-shadow: 5px 5px 20px 20px #bbbbbb;
+	opacity: 0.9;
+}
+
+.myAbout{
+	display: none;
+	padding: 80px;
+	text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container{
+	position: absolute;
+	bottom: 15px;
+	left: 480px;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.imgcontainer {
+	position: relative;
+	width: 150px;
+	height: 140px;
+	display: inline-block;
+}
+
+.image{
+	display: block;
+	border-radius: 10%;
+	width: 150px;
+	height: 140px;
+}
+
+.overlay{
+	position: absolute;
+	transition: all .3s ease;
+	opacity: 0;
+	background-color: #eee;
+}
+
+.imgcontainer:hover .overlay{
+	opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlayLeft{
+	height: 100%;
+	border-radius: 10%;
+	background-color: 0ca030;
+	width: 0;
+	top: 0;
+	left: 0;
+}
+
+.imgcontainer:hover .overlayLeft{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
