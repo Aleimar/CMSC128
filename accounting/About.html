@@ -1,0 +1,164 @@
+<!Doctype>
+
+	<html>
+		<head>
+			<title>About</title>
+			<!--Links the CSS in this code-->
+			<link rel="stylesheet" type="text/css" href="CSS/Etc.css">
+		</head>
+		
+	<!--Head class-->
+	<body>
+		<div id = "wrapper">
+			<header>
+				<h1> Megatesting Center Inc. </h1> 
+				<h2> Civil Engineering Laboratories </h2>
+			</header>
+		</div>
+	<!--end of Head class-->
+		
+		<ul>
+			<li class = "dropdown">
+			 <a href="javascript:void(0)" class="dropbtn">M E N U</a>
+				<div class="dropdown-content">
+				<a href = "../edit_password.php"> Edit Password </a>
+				<a href = "../logout.php"> Logout </a>
+				</div>
+			</li>
+			<p align = "right" ><font color = "white">WELCOME, RECEIVER!&nbsp&nbsp&nbsp&nbsp</font></p> 
+			
+		</ul>
+			
+		<br>
+
+				
+		
+		<!--Content div class for the white box-->
+		<div class = "content">
+					
+					<div class = "myAbout fade">
+						<b><font size = "5">ABOUT US:</font></b>
+						<br>
+						<br>
+						<p><font size = "4">This software system is made by a group of third year 
+						students of the Bachelor of the Science in Computer Science degree program of the University of the Philippines-Mindanao 
+						in partial fulfillment of their requirement for the subject 
+						CMSC 128 - Software Engineering for the academic year 2017-2018 under 
+						the supervision of Mr. Miguel Carlo S. Guillermo.</font></p>
+					</div>
+					
+					<div class = "myAbout fade">
+						<b><font size = "5"> THE TEAM: </font></b>
+						<br>
+						<b>________________________________________________________</b>
+						<br>
+						<br>
+							<div align = "center">
+								<div>
+									<div class = "container">
+										<img id = "Img" class = "image" src = "Images/Aleimar.jpg" alt = "Aleimar Villabrille">
+											<div class = "overlay overlayLeft">
+												<div class="text">Aleimar Villabrille</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "container">
+										<img id = "Img" class = "image" src = "Images/Kim.jpg" alt = "Kimberly Carriedo">
+											<div class = "overlay overlayLeft">
+												<div class="text">Kimberly Carriedo</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "container">
+										<img id = "Img" class = "image" src = "Images/Dory.jpg" alt = "Dory Portillo">
+											<div class = "overlay overlayLeft">
+												<div class="text">Dory Portillo</div>
+											</div>
+									</div>
+							
+									
+								</div>
+								<br>
+								<div>
+									<div class = "container">
+										<img id = "Img" class = "image" src = "Images/Ria.jpg" alt = "Maria Angela Ramas">
+											<div class = "overlay overlayLeft">
+												<div class="text">Maria Angela Ramas</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "container">
+										<img id = "Img" class = "image" src = "Images/Mia.jpg" alt = "Mia Tom">
+											<div class = "overlay overlayLeft">
+												<div class="text">Mia Tom</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "container">
+										<img id = "Img" class = "image" src = "Images/Paula.jpg" alt = "Paula Yap">
+											<div class = "overlay overlayLeft">
+												<div class="text">Paula Ann Gabrielle Yap</div>
+											</div>
+									</div>
+									
+								</div>
+							</div>
+					
+					</div>
+				
+				<div class="dot-container">
+						<span class="dot" onclick="currentSlide(1)"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+						<span class="dot" onclick="currentSlide(2)"></span> 
+				</div>
+	
+		</div>
+					
+					
+				
+				
+		
+				
+		<div class = "botnav">
+				<a href = "index.php">HOME</a>
+				<a style = "color: #f7f7f7">ABOUT</a>
+				<a href = "Help.html">HELP</a>
+				<a href = "FAQ.html">F.A.Q.</a>
+		</div>
+		<!-- end of form html class -->
+		<div class = "end">
+			<p> ___________________________________________________</p>
+			<p> Copyright 2018. All Rights Reserved</p>
+		</div>
+		
+		<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("myAbout");
+					var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {slideIndex = 1}    
+						if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+				}
+			</script>
+		
+		
+	</body>
+</html>
