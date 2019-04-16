@@ -1,0 +1,215 @@
+/*overall bg color*/
+body{
+	background-color: #c9c9c9;
+	
+}
+
+/*Header 1 design: Megatesting Center Inc.*/
+h1{
+	text-align: center;
+	color: yellow;
+}
+
+/*Header 2 subtitle design: Civil Engineering Laboratories*/
+h2{
+	text-align: center;
+	color: yellow;
+}
+/*Wrapper for the Banner. Not visible because same color of 
+the body of the Banner/Header(might change later)*/
+#wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: green;
+	padding: 32px;
+}
+
+/*Header/Banner design*/
+header{
+	background-color: green;
+	height: 150px;
+	padding: 4px
+}
+
+/*Overall design of the navigation bar*/
+.topnav {
+	width: 1024px;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	line-height: 40px;
+	background-color: #818181;
+	overflow: hidden;
+
+}
+
+/*Margins for the navigation bar creates space between banner and body*/
+ul.topnav{
+	margin: auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+/*Allows navigation bar texts to be horizontal in line*/
+.topnav li{
+	display: inline;
+
+}
+
+/*Design of the navigation bar text*/
+.topnav a {
+	text-decoration: none;
+	color: #fff;
+	padding: 106.6px;
+	font-variant: small-caps;
+}
+
+/*Color if user hovers over navigation bar*/
+.topnav li a:hover:not(.active) {
+    background-color: #adadad;
+}
+
+/*If a navigation button is clicked this is the design*/
+.active{
+	background-color: green;
+}
+
+/*Copyrights*/
+.end {
+	text-align: center;
+	color: #afafaf;
+}
+
+/*Design for the body*/
+.content {
+	max-width: 922px;
+	height: 550px;
+	margin: auto;
+	background: white;
+	padding: 50px;
+}
+
+/*Container for the login button*/
+.container{
+	
+	padding: 15px;
+	text-align:center;
+}
+
+/*Design for the texts in container (Username, Password, 
+Confirm Password,etc)*/
+.container p{
+	font-family: sans-serif;
+	font-size: 14px;
+	text-align: center;
+	margin: 0 0 5px 0;
+	color: black;
+}
+
+/*Form design*/
+form{
+	
+	border: 3px solid #f1f1f1;
+	font-family: sans-serif;
+	margin: auto;
+ 
+}
+
+/*container a (Forgot password/Back to Login) text design*/
+.container a{
+	text-align:center;
+	text-decoration: none;
+    font-size: 14px;
+    color: grey;
+
+}
+
+/*If user hovers over Forgot password/Back to Login link*/
+.container a:hover{
+	color: #C1C1C1;
+}
+
+/*Design of Text (About US, F.A.Q, Help)*/
+.type p{
+	font-family: sans-serif;
+	font-size: 25px;
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+/*Text for About us, FAQ, Help*/
+.text{
+	text-align: center;
+}
+
+
+
+/*Design of the username and password box*/
+input[type=text], input[type=password] {
+    width: 300px;
+    padding: 12px 30px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+	-webkit-transition: 0.5s;
+    box-sizing: border-box;
+}
+
+
+/*If user clicks the username box, this will be the design*/
+input[type=text]:focus{
+	border: 2px solid #555;
+}
+
+/*If user clicks the password box, this will be the design*/
+input[type=password]:focus{
+	border: 2px solid #555;
+}
+
+/*Design for the buttons (Log in, Submit, Confirm)*/
+button {
+    background-color: #4CAF50;
+    color: yellow;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*Avatar design*/
+.image{
+	text-align:center;
+	margin: 12px 0 0 0;
+}
+
+/*Design for the login button*/
+.btn {
+	text-align: center;
+    width: 150px;
+    padding: 10px 18px;
+    background-color: green;
+}
+
+/*Button hover design*/
+.btn:hover{
+	opacity:0.8;
+}
+
+
+
+/* for the help.html textarea*/
+textarea{
+	resize: none;
+	border: 2px solid #ccc;
+	-webkit-transition: 0.5s;
+	font-family:sans-serif;
+	margin: 4px 0;
+	font-size: 15px;
+	padding: 10px 25px;
+}
+
+/* If the textarea is clicked*/
+textarea:focus{
+	border: 2px solid #555;
+}
