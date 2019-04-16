@@ -1,0 +1,149 @@
+<!Doctype>
+
+<style>
+		body{
+			background-image: url(Images/bg.jpg);
+		}
+	</style>
+	
+	<html>
+		<head>
+			<title>Megatesting Inc. Log in</title>
+			<link rel="stylesheet" type="text/css" href="CSS/Main_CSS.css">
+		</head>
+	
+	
+		<body>
+			
+				<div class = "about-container zoom">
+					
+					<div class = "myAbout fade">
+						<b><font size = "3">ABOUT US:</font></b>
+						<p>This Management Inventory Software is made by a group of third year 
+						students of the Bachelor of the Science in Computer Science 
+						degree program of the University of the Philippines-Mindanao 
+						in partial fulfillment of their requirement for the subject 
+						CMSC 128 - Software Engineering for the academic year 2017-2018.
+						<br/> <br/>This project will not be possible without the continuous advice and support 
+						<br/>of the class adviser Miguel Carlo Guillermo, MM.
+						<br/><br/> This project is titled Megatesting Center Inc. Management Inventory Software
+						to digitize the current inventory system of Megatesting Center Inc.
+					</div>
+					
+					<div class = "myAbout fade">
+						<b><font size = "5"> THE DEVELOPER TEAM: </font></b>
+						<br>
+						<b>________________________________________________________</b>
+						<br>
+						<br>
+							<div align = "center">
+								<div>
+									<div class = "imgcontainer">
+										<img id = "Img" class = "image" src = "Images/Aleimar.jpg" alt = "Aleimar Villabrille">
+											<div class = "overlay overlayLeft">
+												<div class="text">Aleimar Villabrille</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "imgcontainer">
+										<img id = "Img" class = "image" src = "Images/Kim.jpg" alt = "Kimberly Carriedo">
+											<div class = "overlay overlayLeft">
+												<div class="text">Kimberly Carriedo</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "imgcontainer">
+										<img id = "Img" class = "image" src = "Images/Dory.jpg" alt = "Dory Portillo">
+											<div class = "overlay overlayLeft">
+												<div class="text">Dory Portillo</div>
+											</div>
+									</div>
+							
+									
+								</div>
+								<br>
+								<div>
+									<div class = "imgcontainer">
+										<img id = "Img" class = "image" src = "Images/Ria.jpg" alt = "Maria Angela Ramas">
+											<div class = "overlay overlayLeft">
+												<div class="text">Maria Angela Ramas</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "imgcontainer">
+										<img id = "Img" class = "image" src = "Images/Mia.jpg" alt = "Mia Tom">
+											<div class = "overlay overlayLeft">
+												<div class="text">Mia Tom</div>
+											</div>
+									</div>
+									&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+									<div class = "imgcontainer">
+										<img id = "Img" class = "image" src = "Images/Paula.jpg" alt = "Paula Yap">
+											<div class = "overlay overlayLeft">
+												<div class="text">Paula Ann Gabrielle Yap</div>
+											</div>
+									</div>
+									
+								</div>
+							</div>
+					
+					
+					</div>
+					
+					<div class="dot-container">
+						<span class="dot" onclick="currentSlide(1)"></span>&nbsp&nbsp&nbsp 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+					</div>
+				
+				</div>
+				
+				
+			
+			<div class = "topnav">
+				<a href = "index.html">LOGIN</a>
+				<a style = "color: #f7f7f7;"><b>ABOUT</b></a>
+				<a href = "Help.html">HELP</a>
+				<a href = "FAQ.html">F.A.Q.</a>
+				
+			</div>
+			
+			
+			
+			<div class = "end">
+				<br><br><p> ___________________________________________________</p>
+				<p> Copyright 2018. All Rights Reserved</p>
+			</div>
+			
+			
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("myAbout");
+					var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {slideIndex = 1}    
+						if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+				}
+			</script>
+
+		
+		</body>
+	</html>

@@ -1,0 +1,64 @@
+<!Doctype>
+	<!-- background image-->
+	<style>
+		body{
+			background-image: url(Images/bg.jpg);
+		}
+	</style>
+	
+	<html>
+		<head>
+			<!--Title page-->
+			<title>Megatesting Inc. Log in</title>
+			<!--CSS link-->
+			<link rel="stylesheet" type="text/css" href="CSS/Main_CSS.css">
+		</head>
+	
+		<!-- body start-->
+		<body>
+			<!--div class content (box for login)-->
+			<div class = "content zoom" id = "content1">
+				<br>
+				<div class = "imagelogo">
+						<img src = "Images/logo.png">
+			</div>
+			<!--end of div class content-->
+				<br>
+				<form action="logging.php" method="POST">
+					<div class = "container zoom">
+						
+						<p><b>Username</b></p>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						
+						<p><b>Password</b></p>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<br>
+						<br>
+						
+					    <button type="submit" name="submit" value="Login" class = "btn">Log in</button>
+						<br><a href ="forgotpass.php"> Forgot password?</a>
+						
+					</div>
+				</form>
+			</div>
+			
+			<div class = "topnav">
+				<a style = "color: #f7f7f7;"><b>LOGIN</b></a>
+				<a href = "About.html">ABOUT</a>
+				<a href = "Help.html">HELP</a>
+				<a href = "FAQ.html">F.A.Q.</a>
+				
+			</div>
+			
+			
+			
+			<div class = "end">
+				<br><br><p> ___________________________________________________</p>
+				<p> Copyright 2018. All Rights Reserved</p>
+			</div>
+			
+			
+		
+		</body>
+	</html>
